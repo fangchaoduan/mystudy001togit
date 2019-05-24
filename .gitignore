@@ -1,0 +1,47 @@
+#下面就来介绍忽略文件的配置方法:
+#	1. 空行和#开头的行被忽略;
+#	2. glob 模式匹配,shell简化的正则表达式;
+#	3. 最后加(/)表示忽略的是目录;
+#	4. 在匹配模式之前加上(!)表示取反;
+#	5. (*)匹配零个或多个任意字符;
+#	6. [abc]匹配任意一个,a或者b或者c;
+#	7. (?)匹配一个任意字符;
+#	8. [0-9]表示匹配所有0到9的数字;
+
+# 开始Windows要省略的文件;
+#在Windows下进行Python开发,Windows会自动在有图片的目录下生成隐藏的缩略图文件,如果有自定义目录,目录下就会有Desktop.ini文件,因此需要忽略Windows自动生成的垃圾文件;
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+# 结束Windows要省略的文件;
+
+
+# 开始Python要省略的文件;
+# Python编译会产生.pyc、.pyo、dist等文件或目录;
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+# 结束Python要省略的文件;
+
+
+
+# 开始自己要忽略的文件(My configurations);
+# 如一些配置信息或密码等;
+db.ini
+deploy_key_rsa
+ignore.js
+# 结束自己要忽略的文件(My configurations);
+
+
+
+
+
+
+
+
+
+
+
