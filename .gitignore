@@ -33,6 +33,9 @@ build
 db.ini
 deploy_key_rsa
 ignore.js
+ignore1.js
+
+ignore3.js
 # 结束自己要忽略的文件(My configurations);
 
 
